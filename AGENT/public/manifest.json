@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Agent NAN",
+  "version": "1.0.1",
+  "description": "AI AGENT WORKFLOW FOR GOOGLE",
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources":[{
+      "resources": ["icons/*.svg"],
+      "matches": ["<all_urls>"]
+  }],
+  "action": {
+     "default_icon":{
+       "128": "icons/logo_nan.png"
+     }
+  },
+  "permissions": ["tabs", "scripting", "activeTab", "storage", "sidePanel", "tabCapture"],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "run_at": "document_start"
+  }],
+  "host_permissions": ["<all_urls>"]
+}
