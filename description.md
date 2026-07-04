@@ -1,6 +1,6 @@
 Agent NAN is an agentic chrome extension that can interact with your browser, answer question based site, summarize content, translate pages
 
-#Features
+## Features
 
 - Page summarization- Agent NAN can summarize any page, even with large context windows
 - Page translation and multi-language support - AGENT NAN allows the user to select their language of
